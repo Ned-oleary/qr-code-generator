@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR generator</title>
+    <link href="/static/styles/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class = " flex mx-auto h-screen place-content-center items-stretch">
+        <form action="/qr" method="post" class = "drop-shadow-sm border self-center">
+            <div class = "grid justify-items-center p-5">
+                <div class = "flex-col m-2 p-2">
+                    <label for="url" class = "p-1">Enter your link here:</label>
+                    <input class = "border rounded p-1" type="url" id="url" name="url" required>
+                </div>
+                <button type="submit" class = "drop-shadow-sm w-3/6 p-2 bg-gray-100 border">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
