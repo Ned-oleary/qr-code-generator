@@ -11,9 +11,6 @@ def home():
 def gen_qr():
     url = request.form["url"]
     image = qrcode.make(url)
-    if(request.args.get("filename")):
-        filename = request.args.get("filename")
-    else:
-        filename = "image.png"
+    filename = "image.png"
     image.save("./static/" + filename)
     return(render_template("image.html", filename = filename))
