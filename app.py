@@ -1,4 +1,4 @@
-from flask import Flask, request, url_for, render_template
+from flask import Flask, request, render_template
 import qrcode
 
 app = Flask(__name__)
